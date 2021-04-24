@@ -28,7 +28,7 @@
       copy: 
         src: info.php
         dest: /var/www/html/info.php
-    - name: copying a file
+    - name: copying 
       copy: 
         src: custom.html
         dest: /var/www/html/custom.html
