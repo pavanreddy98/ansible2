@@ -28,4 +28,7 @@
       copy: 
         src: info.php
         dest: /var/www/html/info.php
-git remote add origin https://github.com/pavanreddy98/ansible2.git
+    - name: copying a file
+      copy: 
+        src: custom.html
+        dest: /var/www/html/custom.html
