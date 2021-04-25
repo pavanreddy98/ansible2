@@ -6,13 +6,13 @@
     - name: java installation
       apt:
        name: openjdk-11-jdk
-       status: prasent
+       status: present
        update_cache: yes
     - name: tomcat9 installation
       apt:
        name: tomcat9 
-       status: prasent
+       status: present
     - name: downloading a file
       get_url:
        url: wget https://referenceappkhaja.s3-us-west-2.amazonaws.com/gameoflife.war
-       dest: /var/lib/tomcat8/webapps/
+       dest: /var/lib/tomcat8/webapps/gameoflife.war
