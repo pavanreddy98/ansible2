@@ -3,16 +3,16 @@
   hosts: all
   become: yes
   tasks:
-    -name: java installation
-     apt:
+    - name: java installation
+      apt:
        name: openjdk-11-jdk
        status: prasent
        update-cache: yes
-    -name: tomcat9 installation
-     apt:
+    - name: tomcat9 installation
+      apt:
        name: tomcat9 
        status: prasent
-    -name: downloading a file
-     get_url:
+    - name: downloading a file
+      get_url:
        url: wget https://referenceappkhaja.s3-us-west-2.amazonaws.com/gameoflife.war
        dest: /var/lib/tomcat8/webapps/
