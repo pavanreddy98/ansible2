@@ -14,5 +14,5 @@
        state: present
     - name: downloading a file
       get_url:
-       url: wget https://referenceappkhaja.s3-us-west-2.amazonaws.com/gameoflife.war
+       url: https://referenceappkhaja.s3-us-west-2.amazonaws.com/gameoflife.war
        dest: /var/lib/tomcat8/webapps/gameoflife.war
