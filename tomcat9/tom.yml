@@ -5,13 +5,13 @@
   tasks:
     - name: java installation
       apt:
-       name: openjdk-8-jdk
-       status: present
+       name: openjdk-11-jdk
+       state: present
        update_cache: yes
     - name: tomcat9 installation
       apt:
        name: tomcat9 
-       status: present
+       state: present
     - name: downloading a file
       get_url:
        url: wget https://referenceappkhaja.s3-us-west-2.amazonaws.com/gameoflife.war
