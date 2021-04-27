@@ -8,7 +8,7 @@
        msg: play1 
    - name: including list of task
      include: including.yaml
-   - name: adding a tag
+   
      tags:
       - kkk
       - yyy
