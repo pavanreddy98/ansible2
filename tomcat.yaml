@@ -3,7 +3,10 @@
   hosts: all
   become: yes
   tasks: 
-   - debug: 
-      msg: play1 
+   - name: importing a playbook 
+     debug: 
+       msg: play1 
+   - name: including list of task
+     include: including.yaml
 - name: including a playbook
   import_playbook: 1.yml

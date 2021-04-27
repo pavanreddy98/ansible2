@@ -1,0 +1,10 @@
+---
+- name: incliding a task in another playbook
+  debug:
+    msg: "pavan"
+- name: including a task2 in another playbook
+  debug:
+    masg: "anil"
+- name: including a task3 in another playbook
+  debug:
+    masg: "hello"
