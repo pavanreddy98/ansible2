@@ -5,5 +5,5 @@
 - tasks: 
    - debug: 
       msg: play1 
-   - name: including a playbook
-     import_playbook: 1.yml
+- name: including a playbook
+  import_playbook: 1.yml
