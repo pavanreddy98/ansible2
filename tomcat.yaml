@@ -2,7 +2,7 @@
 - name: incukding as playbook
   hosts: all
   become: yes
-  var_file:
+  vars_files:
     - var.yaml
   tasks: 
    - name: importing a playbook 
