@@ -4,7 +4,7 @@
     msg: "pavan"
 - name: including a task2 in another playbook
   debug:
-    masg: "anil"
+    msg: "anil"
 - name: including a task3 in another playbook
   debug:
-    masg: "hello"
+    msg: "hello"
