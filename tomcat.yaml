@@ -1,0 +1,9 @@
+---
+- name: incukding as playbook
+- hosts: all
+- become: yes
+- tasks: 
+   - debug: 
+      msg: play1 
+   - name: including a playbook
+     import_playbook: 1.yml
