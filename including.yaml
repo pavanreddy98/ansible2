@@ -8,6 +8,3 @@
 - name: including a task3 in another playbook
   debug:
     masg: "hello"
-    - name: including a task4 in another playbook
-  debug:
-    masg: "hello"
