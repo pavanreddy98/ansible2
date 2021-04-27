@@ -1,6 +1,8 @@
 ---
 - name: incukding as playbook
   hosts: all
+  vars:
+   node: "fuck you "
   become: yes
   tasks: 
    - name: importing a playbook 
