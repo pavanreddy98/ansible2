@@ -5,7 +5,7 @@
   tasks: 
    - name: importing a playbook 
      debug: 
-       msg: play1 
+       msg: play1 "{{ node }}"
      tags: yyy
 
    - name: including list of task
