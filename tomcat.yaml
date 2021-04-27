@@ -3,6 +3,8 @@
   hosts: all
   become: yes
   tasks: 
+   -name : adding a variable file 
+    - including_vars: var.yaml
    - name: importing a playbook 
      debug: 
        msg: play1 "{{ var1 }}"
