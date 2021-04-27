@@ -1,8 +1,8 @@
 ---
 - name: incukding as playbook
-- hosts: all
-- become: yes
-- tasks: 
+  hosts: all
+  become: yes
+  tasks: 
    - debug: 
       msg: play1 
 - name: including a playbook
