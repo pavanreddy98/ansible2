@@ -2,9 +2,9 @@
 - name: incukding as playbook
   hosts: all
   become: yes
+  var_file:
+    - var.yaml
   tasks: 
-   - name : adding a variable file 
-     including_vars: var.yaml
    - name: importing a playbook 
      debug: 
        msg: play1 "{{ var1 }}"
