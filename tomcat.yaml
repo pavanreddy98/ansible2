@@ -6,6 +6,8 @@
    - name: importing a playbook 
      debug: 
        msg: play1 
+     tags: yyy
+
    - name: including list of task
      include: including.yaml
    
