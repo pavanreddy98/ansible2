@@ -1,8 +1,14 @@
 ---
 - name: adding loops
-  loop:
-   - "one"
-   - "two"
-   - "three"
-   - "4th"
-   - "5th"
+  hosts: all
+  become: yes
+  tasks:
+    debug:
+      msg : "{{ item }}"
+    loop:
+     - anil
+     - pavan 
+     - kalla
+     - reddy
+
+     
