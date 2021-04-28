@@ -1,0 +1,8 @@
+---
+- name: adding loops
+  loop:
+   - "one"
+   - "two"
+   - "three"
+   - "4th"
+   - "5th"

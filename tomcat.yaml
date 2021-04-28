@@ -4,10 +4,12 @@
   become: yes
   vars_files:
     - var.yaml
+  loop:
+    - loops.yml
   tasks: 
    - name: importing a playbook 
      debug: 
-       msg: play1 "{{ var1 }}"
+       msg: play1 "{{ item }}"
      tags: yyy
 
    - name: including list of task
@@ -17,5 +19,4 @@
       - kkk
       - yyy
 - name: including a playbook
-  import_playbook: 1.yml
-     
+  import_playbook: 1.yml    
